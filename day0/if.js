@@ -23,6 +23,4 @@ else if (number > 0) console.log("positif");
 else  console.log("egal zero");
  
 
-// exercice 4
-
 
