@@ -37,3 +37,54 @@ function compterPairs(nbr1, nbr2) {
 }
 
 console.log(compterPairs(1 , 7));
+
+
+// ---------  3  ------
+
+function construireTriangle(taille) {
+    let line = "" ;
+    for(let x=0 ; x<=taille ; x++){
+        
+
+        line += " " + x 
+        console.log(line);
+        
+    }
+}
+construireTriangle(4)
+
+
+// ---------  4  ------
+
+function calculer(nbr1, nbr2, callback) {
+
+    return callback(nbr1 , nbr2) ;
+}
+
+function addition(a , b){
+    return a + b ;
+}
+
+function multiple(a , b){
+    return a * b ;
+}
+
+console.log( calculer(6 , 8 , addition ));
+
+console.log( calculer(6 , 8 , multiple ));
+
+// ---------------------
+
+let result1 = calculer( 8 , 5 , function(a , b){
+    return   a ** b ;
+})
+
+console.log(result1);
+
+
+let result2 = calculer( 6 , 7 , (a , b)=>{
+    return a / b ;
+})
+
+console.log( result2);
+
